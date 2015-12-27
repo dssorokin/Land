@@ -1,0 +1,140 @@
+@import "bourbon";
+@import "config";
+
+body{
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "SourceSansPro", sans-serif;
+	overflow-x: hidden;
+}
+
+.hidden{
+	display: none;
+}
+h1
+{
+	font-family: "Raleway",serif;
+	font-size: em(45px);
+}
+h2
+{
+	font-family: "Raleway",$helvetica;
+	font-size: em(35px);
+}
+h3
+{
+	font-size: em(16px);
+	font-family: "Raleway";
+	line-height: em(16px);
+	margin-bottom: 20px;
+}
+h4
+{
+	font-family: "Raleway";
+	font-size: em(24px);
+	margin-bottom: 15px;
+	color:white;
+}
+strong
+{
+	
+}
+.page_header
+{
+	&::before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(img/header_imgs/bg_gradient.png);
+		background-repeat: repeat-y;
+		opacity: 0.9;
+
+	}
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 170px;
+	min-height: 752px;
+	background-image: url(img/header_imgs/header_bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	color:white;
+}
+.logo
+{
+	font-family: "WalkwayBlack",sans-serif;
+	letter-spacing: 3px;
+	font-size: 35px;
+	color:white;
+	font-weight: bold;
+	&:hover
+	{
+		color:white;
+		text-decoration: none;
+	}
+	span
+	{
+		color:$main-color;
+	}
+}
+.social-icons
+{
+	margin-top:15px;
+	float: right;
+	.icon
+	{
+		display: inline-block;
+		border-radius: 50%;
+		width:25px;
+		height: 25px;
+		line-height: 25px;
+		background-color: white;
+		color:black; 
+		text-align: center;
+	}
+}
+.title_container
+{
+	margin-top: 170px;
+	h1
+	{
+		margin-bottom: 17px;
+		span
+		{
+			color:$main-color;
+		}
+	}
+
+	.descr
+	{
+		padding: 0 45px;
+		font-size: em(20px);
+		line-height: em(30px);
+		font-family: "SourceSansPro";
+	}
+}
+.header_form
+{
+	background-color: rgba(9,18,23,0.5);
+	padding:25px;
+	text-align: center;
+	input[type="text"],input[type="email"],input[type="phone"]
+	{
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: (218/900)*100%;
+		border-radius: 2px;
+		border:1px solid $main-color;
+		border-left: 3px solid $main-color;
+		background-color: black;
+		color:white;
+		margin-right: 12px;
+	}
+
+}

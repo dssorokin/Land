@@ -1,0 +1,16 @@
+{
+  "name": "jquery.equalheight",
+  "version": "1.0.3",
+  "main": "jquery.equalheight.js",
+  "homepage": "https://github.com/bramsmulders/jquery.equalheight",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.3",
+    "commit": "42999159823d444dfebb36576eae1e236fa0d974"
+  },
+  "_source": "git://github.com/bramsmulders/jquery.equalheight.git",
+  "_target": "~1.0.3",
+  "_originalSource": "jquery.equalheight",
+  "_direct": true
+}

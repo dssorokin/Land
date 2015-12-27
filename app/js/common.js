@@ -1,0 +1,58 @@
+$(document).ready(function() {
+
+	//Цели для Яндекс.Метрики и Google Analytics
+	$(".count_element").on("click", (function() {
+		ga("send", "event", "goal", "goal");
+		yaCounterXXXXXXXX.reachGoal("goal");
+		return true;
+	}));
+
+	//SVG Fallback
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+	};
+
+	$('.features_item').equalHeight();
+
+	var owlSlider = $('.slider-container');
+	owlSlider.owlCarousel({
+		autoPlay:3000,
+
+		items:3,
+		itemsDesktop:[1199,2],
+		itemsDesktopSmall : [980,2],
+		itemsMobile : [479,1]
+	});
+
+	//Аякс отправка форм
+	//Документация: http://api.jquery.com/jquery.ajax/
+	$("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				
+				$("#form").trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+	//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch(err) {
+
+	};
+
+	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
+});

@@ -1,0 +1,7 @@
+@import "bourbon";
+
+@include font-face("RobotoRegular", "fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff ttf)
+@include font-face("Raleway", "fonts/Raleway/RalewayMedium", $file-formats: eot woff ttf)
+@include font-face("WalkwayBlack","fonts/WalkwayBlack/WalkwayBlack", $file-formats: eot woff ttf)
+@include font-face("SourceSansPro","fonts/SourceSansPro/SourceSansPro", $file-formats: eot woff ttf)
+

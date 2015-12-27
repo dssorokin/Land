@@ -1,0 +1,229 @@
+@import "bourbon";
+@import "config";
+
+*::-webkit-input-placeholder
+{
+	color: #666;
+	opacity: 1;
+}
+
+*:-moz-placeholder
+{
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder
+{
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder
+{
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+{
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid
+{
+	color: #666;
+}
+
+//Custom Styles Here
+.sect_basic,.sect_basic_1
+{
+	padding:100px 0;
+}
+
+.sect_basic
+{
+	background-color: white;
+	.sect_head
+	{
+		&::before
+		{
+			@extend .blue_line;
+			left: 50%;
+			top: 55%;
+			transform:translate(-50%);
+		}
+		h2
+		{
+			text-align: center;
+		}
+		p
+		{
+			text-align: center;
+		}
+	}
+}
+
+.sect_2
+{
+	background-color: white;
+}
+.pros
+{
+	margin-bottom: 52px;
+	a
+	{
+		vertical-align: top;
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		background-color: $main-color;
+		color:white;
+		line-height: 25px;
+		text-align: center;
+		margin-right: 15px;
+	}
+	.pros_desc
+	{
+		width:90%;
+		display: inline-block;
+	}
+}
+
+.sect_3
+{
+	background-color: #f7f8fa;
+}
+
+.sect_4
+{
+	
+	.book{
+		background-position: -54px 0;
+		width: 50px;
+		height: 50px;
+	}
+
+	.brackets{
+		background-position: -269px 0;
+		width: 50px;
+		height: 44px;
+	}
+
+	.compass{
+		background-position: -217px 0;
+		width: 50px;
+		height: 50px;
+	}
+
+	.gear{
+		background-position: -162px 0;
+		width: 50px;
+		height: 50px;
+	}
+
+	.gift{
+		background-position: -106px 0;
+		width: 50px;
+		height: 50px;
+	}
+
+	.watches{
+		background-position: 0 0;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.features_item
+{
+	margin-bottom: 40px;
+	text-align: center;
+	h3
+	{
+		margin-bottom: 20px;
+	}
+	.item_icon
+	{
+		background-image: url(img/sect_4/sprites.png);
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+}
+.sect_5
+{
+	background-color: $color-section;
+}
+
+.table_price
+{
+	font-family: Arial;
+	background-color: white;
+	width: 100%;
+	thead
+	{
+		td
+		{
+			padding: 30px 0;
+			width: 100%;
+		}
+		
+		background-color: rgb(50,50,50);
+		color:white;
+		text-align: center;
+	}
+	tbody>tr
+	{
+		border-bottom: 1px dashed black;
+	}
+	tbody>tr>td
+	{
+		padding:20px;
+	}
+	tbody>tr>td:first-child
+	{
+		width:70%;
+		
+	}
+	tbody>tr>td:last-child
+	{
+		width: 30%;
+		text-align: right;
+	}
+}
+.table_container
+{
+	&:nth-of-type(2)
+	{
+		thead
+		{
+			background-color: $main-color;
+		}
+		.table_button_1
+		{
+			background-color:$main-color;
+			color:white;
+			border: none;
+		}
+	}
+}
+.sect_6
+{
+	width: 100%;
+	.player
+	{
+		width:100%;
+		height:400px;
+	}
+	
+}
+
+.sect_7
+{
+	background-color: $color-section;
+}
+.owl-pagination
+{
+	margin-top: 35px;
+}
+//ALWAYS END
+@import "media";
